@@ -21,7 +21,6 @@ L = 10;
 h = (1/L)*ones(1,L);
 E_avg = filter(h, 1, E);
 E = E - E_avg;
-E(E<0) = 0;
 E(E<3*mean(E)) = 0;
 
 %peak detection
