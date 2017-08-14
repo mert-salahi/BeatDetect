@@ -1,5 +1,5 @@
 %Read in audio file
-[x, Fs] = audioread('battles.mp3');
+[x, Fs] = audioread('mydisco.mp3');
 x = x(15*Fs:30*Fs, :);
 x_mono = 0.5*(x(:,1) + x(:,2));
 
